@@ -24,17 +24,17 @@ p{
 }*/
 
 h1{
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     /*font-family: 'Playball', cursive;*/
     color:#DC9291;
 }
 .adorno h1::after{
-    content: url(../img/path185.png);
+    content: url(../img/path183.png);
     margin: 20px;
 
 }
 .adorno h1::before{
-    content: url(../img/path184.png);
+    content: url(../img/path182.png);
     margin: 20px;
 }
 
@@ -1106,6 +1106,21 @@ box-shadow: none;
 
 /* =====estilo de logo========*/
 @media(min-width:1024px) {
+    h1{
+    font-size: 2.2rem;
+    /*font-family: 'Playball', cursive;*/
+    color:#DC9291;
+}
+.adorno h1::after{
+    content: url(../img/path185.png);
+    margin: 20px;
+
+}
+.adorno h1::before{
+    content: url(../img/path184.png);
+    margin: 20px;
+}
+
    .logo-content{
     background-color: #fff;
     margin-left: -15px;
