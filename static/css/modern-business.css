@@ -262,6 +262,34 @@ a:hover{
     color: white;
     padding: 0 5px;
 }
+/*logo-------------*/
+.logo-content{
+    background-color: #fff;
+    margin-left: -17px;
+    margin-bottom: -8px;
+    margin-top: -10px;
+    padding-left: 7px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0 100px 100px 0;
+}
+.logo{
+    width: 85px;
+    max-width: 200px;
+}
+
+
+.logo-dinamico-1{
+    display: none;
+    visibility: collapse;
+}
+.logo-dinamico-2{
+    display: initial;
+    visibility: visible;
+}
+
+/*formilarios*/
 
 .form-dinamico_1{
     visibility: collapse;
@@ -462,7 +490,7 @@ padding-top: 32px;
 padding-bottom: 30px;
 }
 .link-ap-navbar{
-    color: #DC9291 !important;
+    color: #ce6160 !important;
 
 }
 .link-ap-navbar:hover{
@@ -1081,37 +1109,7 @@ box-shadow: none;
 
 /* =====estilo de logo========*/
 @media(min-width:1024px) {
-    .espacio-logo {
-    height: 82px;
-    background-image: url(../img/logo.png);
-    background-repeat: no-repeat;
-    padding-top: 5px;
-    position: absolute;
-    z-index: 5000;
-    }
-
-    .form-dinamico_1{
-    visibility: visible;
-    display: inherit;
-    }
-    .form-dinamico_2{
-        visibility:collapse;
-        display: none;
-    }
-    .form-inline .form-control {
-        display: initial;
-        text-align: left;
-        background-color: #fff;
-        height: 41px !important;
-        border-radius: 50px;
-        border: 0px ;
-        border: 1px solid #CD8F90;
-        margin: 0 10px;
-    }
-  
-
-}
-.logo-content{
+   .logo-content{
     background-color: #fff;
     margin-left: -15px;
     margin-bottom: -8px;
@@ -1121,11 +1119,42 @@ box-shadow: none;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 0 100px 100px 0;
-}
-.logo{
+    }
+    .logo{
     width:134px;
     max-width: 200px;
+    }
+   .logo-dinamico-1{
+    display: initial;
+    visibility: visible;
+   
+    }
+    .logo-dinamico-2{
+    display: none;
+    visibility: collapse;
+    }
+    
+    .form-inline .form-control {
+    display: initial;
+    text-align: left;
+    background-color: #fff;
+    height: 41px !important;
+    border-radius: 50px;
+    border: 0px ;
+    border: 1px solid #CD8F90;
+    }
+    .form-dinamico_1{
+    visibility: visible;
+    display: inherit;
+    }
+    .form-dinamico_2{
+        visibility:collapse;
+        display: none;
+    }
+  
+
 }
+
 
 
 
