@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="Lavender Nova" content="">
+    <meta name="template-author" content="Lavender Nova">
     <title>Aposentos de San Pedro</title>
     <!-- Bootstrap Core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
@@ -18,6 +18,8 @@
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../static/font-awesome-4.1.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <!--  WuBook Javascript Library -->
+    <script src="https://wubook.net/js/wblib.jgz"></script>
 </head>
 
 <body>
@@ -240,43 +242,10 @@
                     <h1>CARTAGENA Y SUS TOURS</h1>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec åodio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
                 </div>
-                <!-- cajas-->
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../static/img/ll4293.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><h3>My Konos King</h3></h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="lujo-ap">
-                            <a href="#" class="btn btn-primary btn-leer-mas-1">Info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../static/img/ll4293.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><h3>My Konos King</h3></h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="lujo-ap">
-                            <a href="#" class="btn btn-primary btn-leer-mas-1">Info</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../static/img/ll4293.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title"><h3>My Konos King</h3></h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <div class="lujo-ap">
-                            <a href="#" class="btn btn-primary btn-leer-mas-1">Info</a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <!-- cajas-->
+            <div class="row">
+                <div class="card-deck" id="pkgs"></div>
             </div>
         </div>
     </div>
@@ -329,6 +298,52 @@
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
+    </script>
+    <!-- Script for tourism packages -->
+    <script>
+    var WuBook = new _WuBook(1516382412);
+
+    function packages(pkgsList) {
+        for (i = 0; i < pkgsList.length; i++) {
+            var lista = pkgsList[i];
+            var imgurl = 'https://wubook.net/wbkd/wbkimgs/rpkgs/' + lista.src;
+            var title = lista.titles.def;
+            var descriptions = lista.descriptions.def;
+            var noches = lista.nights;
+            var precio = lista.costs;
+            // ** CREAR ELEMENTOS **
+            var card = document.createElement('div');
+            var card_body = document.createElement('div');
+            var card_img = document.createElement('img');
+            var card_title = document.createElement('h5');
+            var card_text = document.createElement('p');
+            var div_button = document.createElement('div');
+            var card_button = document.createElement('a');
+            // ** ATRIBUTOS DE LOS ELEMENTOS **
+            card.setAttribute('class', 'card');
+            card.style.width = "18rem";
+            card_img.setAttribute('class', 'card-img-top');
+            card_img.src = imgurl;
+            card_body.setAttribute('class', 'card-body text-center')
+            card_title.setAttribute('class', 'card-title');
+            card_title.textContent = title;
+            card_text.setAttribute('class', 'card-text');
+            card_text.textContent = descriptions;
+            div_button.setAttribute('class', 'lujo-ap');
+            card_button.setAttribute('href', '#');
+            card_button.setAttribute('class', 'btn btn-primary btn-leer-mas-1');
+            card_button.textContent = "Reserve ya!";
+            document.getElementById('pkgs').appendChild(card);
+            card.appendChild(card_img);
+            card.appendChild(card_body);
+            card_body.appendChild(card_title);
+            card_body.appendChild(card_text);
+            card.appendChild(div_button);
+            div_button.appendChild(card_button);
+
+        }
+    }
+    WuBook.pkgs(packages)
     </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
