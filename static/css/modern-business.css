@@ -19,9 +19,9 @@ p{
 .img-portfolio {
     margin-bottom: 30px;
 }
-.text-estilo-ap p{
+/*.text-estilo-ap p{
     font-size: 1.2rem;
-}
+}*/
 
 h1{
     font-size: 2.2rem;
@@ -332,6 +332,10 @@ box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 /*botones*/
+
+
+
+
  .btn-suscription{
     font-size: 20px;
     color: #fff;
@@ -1147,7 +1151,7 @@ box-shadow: none;
     visibility: visible;
     display: inherit;
     }
-    .form-dinamico_2{
+    .btn-dinamico-1{
         visibility:collapse;
         display: none;
     }
