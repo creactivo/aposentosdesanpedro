@@ -18,6 +18,7 @@
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../static/font-awesome-4.1.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" integrity="sha256-JDBcnYeV19J14isGd3EtnsCQK05d8PczJ5+fvEvBJvI=" crossorigin="anonymous" />
     <!--  WuBook Javascript Library -->
     <script src="https://wubook.net/js/wblib.jgz"></script>
 </head>
@@ -31,18 +32,23 @@
         <a class="logo-content logo-dinamico-2" href="index.html">
             <img class="img-fluid logo"   src="../static/img/logo1.png" alt="logo">
         </a>
+<<<<<<< HEAD
 
 
 
             <div class="form-dinamico_1">
             <form class="form-inline">
+=======
+        <div class="form-dinamico_1">
+            <form class="form-inline" id="form-wubook-inline">
+>>>>>>> origin/master
                 <div class="form-group">
                     <label for="exampleInputName2">Check In</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="fecha">
+                    <input type="text" class="form-control" id="id_dfrom" name="dfrom" placeholder="fecha" required />
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail2">Check Out</label>
-                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="fecha">
+                    <input type="text" class="form-control" id="id_dto" name="dto" placeholder="fecha" required />
                 </div>
                 <button type="submit" class="btn btn-suscription">Reserva Ya</button>
             </form>
@@ -145,7 +151,7 @@
                 <!-- cajas-->
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="../static/img/ll4293.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../static/img/133913838.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title"><h3>My Konos King</h3></h5>
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -157,7 +163,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="../static/img/ll4293.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../static/img/133914577a.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title"><h3>My Konos King</h3></h5>
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -169,7 +175,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="card">
-                        <img class="card-img-top" src="../static/img/ll4293.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="../static/img/133914035.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title"><h3>My Konos King</h3></h5>
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -306,6 +312,8 @@
     <script src="../static/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../static/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js" integrity="sha256-tW5LzEC7QjhG0CiAvxlseMTs2qJS7u3DRPauDjFJ3zo=" crossorigin="anonymous"></script>
+    <script src="../static/js/book_datepicker.js"></script>
     <script src="../static/js/carousel-testimonio.js"></script>
     <!-- Script to Activate the Carousel -->
     <script>
