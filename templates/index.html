@@ -27,64 +27,28 @@
 
    <!--  nav que consta de un dropdown contenedor de logo que se visualiza de forma diferente segun el tamaño y tambien un fromulario datepiker que desaparece en mobile -->
 
-<nav class="navbar fixed-top navbar-light bg-light navbar-ap">
+<!-- Navigation -->
+    <nav class="navbar fixed-top navbar-light bg-light navbar-ap">
         <a class="logo-content logo-dinamico-1" href="index.html">
             <img class="img-fluid logo"   src="../static/img/logo2.png" alt="logo">
         </a>
         <a class="logo-content logo-dinamico-2" href="index.html">
             <img class="img-fluid logo"   src="../static/img/logo1.png" alt="logo">
         </a>
-<<<<<<< HEAD
-            
         <div class="form-dinamico_1">
-            <form class="form-inline" id="form-wubook-inline">
-
+            <form class="form-inline ">
                 <div class="form-group">
                     <label for="exampleInputName2">Check In</label>
-                    <input type="text" class="form-control" id="id_dfrom" name="dfrom" placeholder="fecha" required />
-=======
-        <div class="form-dinamico_1">
-            <form class="form-inline">
-                <div class="form-dinamico_1">
-                    <form class="form-inline" id="form-wubook-inline">
-                        <div class="form-group">
-                            <label for="exampleInputName2">Check In</label>
-                            <input type="text" class="form-control" id="id_dfrom" name="dfrom" placeholder="fecha" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail2">Check Out</label>
-                            <input type="text" class="form-control" id="id_dto" name="dto" placeholder="fecha" required />
-                        </div>
-                        <button type="submit" class="btn btn-suscription">Reserva Ya</button>
-                    </form>
->>>>>>> origin/master
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="fecha">
                 </div>
-                <button type="submit" class="btn btn-suscription btn-dinamico-1">Reserva</button>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbarsExample01" style="">
-                    <ul class="navbar-nav mr-auto text-center">
-                        <li class="nav-item active">
-                            <a class="nav-link active link-ap-navbar" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-ap-navbar" href="galeria.html">Galeria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-ap-navbar" href="reservas.html">Reservas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-ap-navbar" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="form-group">
+                    <label for="exampleInputEmail2">Check Out</label>
+                    <input type="text" class="form-control" id="exampleInputEmail2" placeholder="fecha">
                 </div>
-<<<<<<< HEAD
                 <button type="submit" class="btn btn-suscription">Reserva Ya</button>
             </form>
         </div>
         <button type="submit" class="btn btn-suscription btn-dinamico-1">Reserva</button>
-
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -104,8 +68,6 @@
                 </li>
             </ul>
         </div>
-=======
->>>>>>> origin/master
     </nav>
 
      <!-- Header Carousel -->
@@ -200,7 +162,7 @@
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="lujo-ap">
-                            <a href="#" class="btn btn-primary btn-leer-mas-1">Reserva</a>
+                            <a href="#" class="btn btn-leer-mas-1">Reserva</a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +174,7 @@
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="lujo-ap">
-                            <a href="#" class="btn btn-primary btn-leer-mas-1">Reserva</a>
+                            <a href="#" class="btn  btn-leer-mas-1">Reserva</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +186,7 @@
                             <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                         <div class="lujo-ap">
-                            <a href="#" class="btn btn-primary btn-leer-mas-1">Reserva</a>
+                            <a href="#" class="btn  btn-leer-mas-1">Reserva</a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +203,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec åodio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
                 </div>
                 <!-- cajas-->
-                <div class="col-xs-12 col-sm-12 col-md-6 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-signal fa-1x"></i><span class="network-name"></span></a>
                         <h3>WI-FI</h3>
@@ -402,7 +364,7 @@
             card_text.textContent = descriptions;
             div_button.setAttribute('class', 'lujo-ap');
             card_button.setAttribute('href', '#');
-            card_button.setAttribute('class', 'btn btn-primary btn-leer-mas-1');
+            card_button.setAttribute('class', 'btn  btn-leer-mas-1');
             card_button.textContent = "Reserve ya!";
             document.getElementById('pkgs').appendChild(card);
             card.appendChild(card_img);

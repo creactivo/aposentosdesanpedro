@@ -351,6 +351,8 @@ border-radius: 10px;
 
 /*boton-creado para esta pagina*/
 .btn-special{
+    margin: 0 auto;
+    display: block;
     padding: 10px 8%;
     border: 1px solid #fff;
     border-radius: 50px;
@@ -815,6 +817,11 @@ editarlas sin problemas con bootstrap*/
     border-color: #DC9291;
     border-radius: 50px;    
 }
+.btn-leer-mas-1:hover{
+  color: #D53230;
+  background-color: #F5C5C4;
+}
+
 /*tarjetas*/
 .lujo-ap{
     text-align: center;
@@ -1127,7 +1134,7 @@ box-shadow: none;
 .adorno h1::before{
     content: url(../img/path184.png);
     margin: 20px;
-}
+    }
 
    .logo-content{
     background-color: #fff;
@@ -1144,7 +1151,7 @@ box-shadow: none;
     width:134px;
     max-width: 200px;
     }
-   .logo-dinamico-1{
+    .logo-dinamico-1{
     display: initial;
     visibility: visible;
    
@@ -1173,6 +1180,15 @@ box-shadow: none;
     .btn-dinamico-1{
         visibility:collapse;
         display: none;
+    }
+    .btn-special{
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 8%;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: #CD8F90;
+    color: #fff;
     }
   
 
