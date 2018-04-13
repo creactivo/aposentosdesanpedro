@@ -300,7 +300,8 @@ a:hover{
     display: inherit;
 }
 .form-inline label{
-        padding-right: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
 }
 
 .form-inline .form-control {
@@ -317,33 +318,27 @@ a:hover{
 .form-control {
 display: block;
 width: 100%;
+height: 41px !important;
 padding: 6px 12px;
 font-size: 14px;
 line-height: 1.42857143;
 color: #555;
 background-color: #fff;
 background-image: none;
-border: 1px solid #fff;
-border-radius: 6px;
--webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
--webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
--o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+border: 1px solid #ccc;
+border-radius: 50px;
 }
-/*botones*/
-
-
-
-
- .btn-suscription{
-    font-size: 20px;
-    color: #fff;
-    padding: 5px 25px;
-    border: 1px solid #fff;
-    background-color: #DC9291; 
-    border-radius: 50px;
-    display: inline-block;
+.nuevo-form-control {
+display: block;
+width: 100%;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 10px;
 }
 
 /*boton-creado para esta pagina*/
@@ -1049,8 +1044,6 @@ box-shadow: none;
     margin-bottom: 20px;
 
 }
-
-    
 .nuevo-img-thumbnail{
     padding-left: 10px;
     padding-right: 10px;
@@ -1067,11 +1060,11 @@ box-shadow: none;
     font-size: 20px;
     color: #fff;
     padding: 5px 25px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: 1px solid #fff;
     background-color: #DC9291; 
     border-radius: 50px;
-    display: block;
-    margin:0 auto; 
 }
 .btn-suscription:hover{
   color: #D53230;
