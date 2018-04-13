@@ -24,7 +24,10 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-light bg-light navbar-ap">
+
+   <!--  nav que consta de un dropdown contenedor de logo que se visualiza de forma diferente segun el tamaño y tambien un fromulario datepiker que desaparece en mobile -->
+
+<nav class="navbar fixed-top navbar-light bg-light navbar-ap">
         <a class="logo-content logo-dinamico-1" href="index.html">
             <img class="img-fluid logo"   src="../static/img/logo2.png" alt="logo">
         </a>
@@ -47,7 +50,7 @@
                 <button type="submit" class="btn btn-suscription">Reserva Ya</button>
             </form>
         </div>
-<button type="submit" class="btn btn-suscription btn-dinamico-1">Reserva</button>
+        <button type="submit" class="btn btn-suscription btn-dinamico-1">Reserva</button>
 
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,12 +71,9 @@
                 </li>
             </ul>
         </div>
-
-
-
-        
     </nav>
-    <!-- Header Carousel -->
+
+     <!-- Header Carousel -->
     <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -111,7 +111,10 @@
   </a>
         </div>
     </header>
-    <!-- Contenido de pagina-->
+<!-- end Header Carousel -->
+ <!-- Contenido de pagina-->
+ <!-- texto de introducciòn -->
+
     <div class="container-fluid color-fluid-2 mt-5">
         <div class="container">
             <div class="row">
@@ -122,19 +125,30 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid container-promo mt-5">
-        <div class="row">
-            <div class="col-xs-12 col-md-6 limpio">
-                <img src="../static/img/105746196.jpg" class="img-fluid" alt="vista de hotel">
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="col-xs-12 col-md-8 promo text-estilo-ap">
+<!-- bloque sobre el hotel -->
+
+<div class="container-fluid container-promo limpio">
+          
+    <div class="row no-gutters mt-5 mb-5">
+
+        <div class="col-xs-12 col-md-6 no-gutters">
+           <img src="../static/img/105746196.jpg" class="img-fluid" alt="vista de hotel">
+        </div> 
+
+
+
+        <div class="col-xs-12 col-md-6 text-estilo-ap mt-5 mb-5">
+            <div class="container">   
+                <div class="col-xs-12 col-md-8">
                     <h2>Hotel</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ipsum natus doloribus earum voluptatem unde totam possimus laborum assumenda quisquam voluptates voluptatum explicabo, quam. Omnis, sed. Reiciendis illum, magni distinctio.</p>
                 </div>
             </div>
         </div>
     </div>
+ </div>
+
+<!-- habitaciones -->
     <div class="container-fluid color-fluid-1 mt-5 mb-5">
         <div class="container">
             <div class="row">
@@ -182,6 +196,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid mt-5 mb-5">
         <div class="container">
             <div class="row">
@@ -190,56 +206,56 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec åodio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
                 </div>
                 <!-- cajas-->
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-xs-12">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-signal fa-1x"></i><span class="network-name"></span></a>
                         <h3>WI-FI</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-car fa-1x"></i><span class="network-name"></span></a>
                         <h3>Room service</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-tv fa-1x"></i><span class="network-name"></span></a>
                         <h3>TV LCD</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-credit-card fa-1x"></i><span class="network-name"></span></a>
                         <h3>Air conditioning</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-paw fa-1x"></i><span class="network-name"></span></a>
                         <h3>Pet allowed</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-coffee fa-1x"></i><span class="network-name"></span></a>
                         <h3>Breakfast</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-h-square fa-1x"></i><span class="network-name"></span></a>
                         <h3>Room service</h3>
                     </div>
                     <p class="text-center">Neque porro qui dolorem ipsum quia dolor sit amet.</p>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-xs-12">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                     <div class="item-servicios">
                         <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-circle"><i class="fa fa-bullseye fa-1x"></i><span class="network-name"></span></a>
                         <h3>WI-FI Service</h3>
@@ -249,6 +265,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid color-fluid-3 mt-5 adorno">
         <div class="container back-especial">
             <div class="row">
@@ -263,13 +280,14 @@
             </div>
         </div>
     </div>
-    <!-- Footer -->
+
+<!-- Footer -->
     <footer>
         <div class="container-fluid">
             <div class="container">
                 <div class="row links-site">
                     <div class="col-md-3">
-                        <img class="img-fluid logo" src="../static/img/logo3.png" alt="">
+                        <img class="img-fluid logo-footer" src="../static/img/logo3.png" alt="">
                     </div>
                     <div class="col-md-6">
                         <nav class="nav">
@@ -301,7 +319,8 @@
             </div>
         </div>
     </footer>
-    <!-- /.container -->
+    <!-- end Footer -->
+
     <!-- jQuery -->
     <script src="../static/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->

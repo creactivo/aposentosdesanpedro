@@ -288,6 +288,14 @@ a:hover{
     display: initial;
     visibility: visible;
 }
+/*::::::::::::::::::::logo footer::::::::::::::*/
+.logo-footer{
+display: block;
+margin: 0 auto;
+}
+
+
+
 
 /*formilarios*/
 
@@ -1145,7 +1153,10 @@ box-shadow: none;
     display: none;
     visibility: collapse;
     }
-    
+    .logo-footer{
+    width:134px;
+    max-width: 200px;
+    }
     .form-inline .form-control {
     display: initial;
     text-align: left;
